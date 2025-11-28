@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation Exercise</title>
+    <style>
+        .container {
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 id="main-heading">Initial Heading Text</h1>
+
+    <div class="container">
+        <h2>Container Content</h2>
+        <p>This is the first paragraph element. Its text color will be changed to blue.</p>
+        <p>This is the second paragraph element. Its text color will also be changed to blue.</p>
+    </div>
+
+    <p>This is a third paragraph outside the container. Its text color will also be changed to blue.</p>
+    <p>A fourth paragraph.</p>
+
+    <script>
+    const headingElement = document.getElementById('main-heading');
+    if (headingElement) {
+
+        headingElement.textContent = "Welcome to the DOM World!";
+    }
+    const paragraphs = document.getElementsByTagName('p');
+    for (let i = 0; i < paragraphs.length; i++) {
+
+        paragraphs[i].style.color = "blue";
+    }
+
+    const containerDiv = document.querySelector('div.container');
+    if (containerDiv) {
+
+        containerDiv.style.backgroundColor = "yellow";
+    }
+    </script>
+
+</body>
+</html>
