@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive DOM Manipulation</title>
+    <style>
+        #targetDiv {
+            margin-top: 20px;
+            padding: 20px;
+            border: 2px solid #333;
+            min-height: 100px; /* Ensure visibility */
+            transition: background-color 0.3s; /* Smooth color change */
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Interactive DOM Tasks</h1>
+
+    <label for="colorInput">Enter Color Name:</label>
+    <input type="text" id="colorInput" placeholder="e.g., blue, #f00">
+    <button id="changeBgButton">Change Background</button>
+
+    <hr>
+
+    <label for="textInput">Enter New Text:</label>
+    <input type="text" id="textInput" placeholder="Enter text to update div">
+    <button id="updateTextButton">Update Text</button>
+
+    <hr>
+
+    <div id="targetDiv">
+        This is the target division. Its background and text will change!
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
