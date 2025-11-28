@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic To-Do List</title>
+    <style>
+        .completed {
+            /* Style to cross out the text */
+            text-decoration: line-through;
+            color: gray;
+        }
+        .task-item {
+            list-style: none; /* Hide bullets */
+            padding: 8px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px dashed #ccc;
+        }
+        .task-item button {
+            margin-left: 10px;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>📝 My Dynamic To-Do List</h1>
+
+    <div>
+        <input type="text" id="taskInput" placeholder="Enter a new task...">
+        
+        <button id="addTaskButton">Add Task</button>
+    </div>
+
+    <hr>
+
+    <ul id="taskList">
+        </ul>
+
+    <script src="script.js"></script>
+</body>
+</html>
